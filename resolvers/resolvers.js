@@ -1,6 +1,6 @@
-const Resolvers = () => {
+const Resolvers = {
 
-    hello: require('./hello.resolver');
+    hello: require('./hello.resolver')
 
 }
 

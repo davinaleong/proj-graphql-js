@@ -6,7 +6,7 @@ const Routes = (app, env) => {
 
     require('./web.routes')(router, env);
 
-    require('./graphql.routes')(router, env);
+    require('./graphql.routes')(app, env);
 
 }
 
