@@ -3,7 +3,6 @@ const express = require('express');
 
 
 const env = process.env;
-const serverPort = env.SERVER_PORT || 3000;
 
 
 const app = express();
@@ -19,6 +18,6 @@ app.use(function(req, res, next) {
 require('./routes/routes')(app, env);
 
 
-app.listen(serverPort, function() {
-    console.log(`${env.APP_NAME} listening on port ${serverPort}`);
+app.listen(process.env.SERVER_PORT || 5000, function() {
+    console.log(`Welcom to ${env.APP_NAME}!`);
 });
