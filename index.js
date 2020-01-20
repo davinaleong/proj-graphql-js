@@ -19,5 +19,5 @@ require('./routes/routes')(app, env);
 
 
 app.listen(process.env.SERVER_PORT || 5000, function() {
-    console.log(`Welcom to ${env.APP_NAME}!`);
+    console.log(`Welcome to ${env.APP_NAME}!`);
 });
